@@ -50,6 +50,9 @@
             "name": "[parameters('name')]",
             "location": "[parameters('location')]",
             "dependsOn": [],
+             [
+              “[variables(‘keyvaultName’)]”
+               ],
             "tags": {},
             "properties": {
                 "enabledForDeployment": "[parameters('enabledForDeployment')]",
